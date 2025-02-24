@@ -1,0 +1,60 @@
+/* Apply background image */
+body {
+    font-family: Arial, sans-serif;
+    background: url('ss1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Calculator container */
+.calculator {
+    width: 300px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Display screen */
+#display {
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    font-size: 1.5em;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    font-size: 1.2em;
+    border: none;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #555;
+}
+
+/* Special styling for Zero button */
+.zero {
+    grid-column: span 2;
+}
